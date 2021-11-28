@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotos dinamicas </title>
+</head>
+<body>
+    <h1>fotos dinamicas </h1>
+    <p>tente abrir esse site em varios dispositivos diferante ou simplesmente aumente e diminua o tamanha do seu navegador   </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="fotos/foto-p.png" type="image/png">
+
+
+        <source media="(max-width:1050px )" srcset="fotos/foto-m.png" type="image/png">
+     
+
+        <img src="fotos/foto-g.png" alt="foto grande flexivel ">
+    </picture>
+
+    <h1>vamos aprender a rebruduzir audio </h1>
+    <audio src="musicas/jazz.mp3"controls autoplay></audio>
+
+
+    <h1>para reproduzir caso alguma pessoa nao consiga escutar audios mp3</h1>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="musicas/jazz.mp3" type="audio/mpeg">
+        <source src="musicas/jazz.mp3" type="audio/ogg">
+        <source src="musicas/jazz.mp3" type="audio/wav">
+        <p>infelizmente seu navegador nao consegui reproduzir musica </p>
+    </audio>
+
+
+    
+</body>
+</html>
